@@ -1,0 +1,26 @@
+﻿@model PetAnimals.Models.Specie
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Specie</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SpecieName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SpecieName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SpecieId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
